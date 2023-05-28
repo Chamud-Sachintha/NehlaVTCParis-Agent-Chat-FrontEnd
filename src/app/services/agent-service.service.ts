@@ -15,4 +15,9 @@ export class AgentServiceService {
     const path = environment.app_uri + "agent/validate";
     return this.http.post<any>(path, agentDetails);
   }
+
+  getConnectedAgentsList(agentDetails: Agent):Observable<any[]> {
+    const path = environment.app_uri + "agent/connectedAgents";
+    return this.http.post<any[]>(path, agentDetails);
+  }
 }

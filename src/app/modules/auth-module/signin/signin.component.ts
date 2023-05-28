@@ -33,6 +33,7 @@ export class SigninComponent implements OnInit {
 
     this.agentService.validateAgentDetails(this.agentDetails).subscribe((data) => {
       if (data.statusCode != 0) {
+        sessionStorage.setItem("userName", data.data[0].userName);
         this.router.navigate(['/chat']);
       } else {
 
