@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    app_uri: 'http://localhost:8080/',
-    web_socket: 'http://localhost:8080/ws'
+    app_uri: 'https://nehlavtcparis-agentchat-platform-production.up.railway.app/',
+    web_socket: 'http://nehlavtcparis-agentchat-platform-production.up.railway.app/ws'
 };
